@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Analisis Geo-posicionado para dimensionar proyectos de riego</title>
+        <title>Atlantis</title>
         <!-- Mobile specific metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- Force IE9 to render in normal mode -->
@@ -19,7 +19,8 @@
         <!-- Icons -->
         <link href="/static/assets/css/icons.css" rel="stylesheet" />
         <!-- Bootstrap stylesheets (included template modifications) -->
-        <link href="/static/assets/css/bootstrap.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <!-- jQueryUI -->
         <link href="/static/assets/css/appstart-theme/jquery.ui.all.css" rel="stylesheet" />
         <!-- Plugins stylesheets (all plugin custom css) -->
@@ -77,11 +78,48 @@
     <div class="content-inner">
       <!-- Start .row -->
       <div class="row">
-                    <h3>Salida <h3>
-      <!-- End .row -->
+
+
+        <div class="col-lg-12 col-md-12 sortable-layout">
+          <div class="panel panel-primary plain ">
+            <!-- Start .panel -->
+            <div class="panel-heading">
+              <h4 class="panel-title">Talonario de Zona Inundada</h4>
+            </div>
+            <div class="panel-body table">
+              <h2>El siguiente Talonario Indica que el señor:</h2>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Email</th>
+                      <th>Latitud</th>
+                      <th>Longitud</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{{name}}</td>
+                      <td>{{email}}</td>
+                      <td>{{lat}}</td>
+                      <td>{{lon}}</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+                <div class="alert alert-{{status}}">
+                  <strong>{{zone}}</strong>
+                </div>
+
+                </div>
+                  <!-- End .panel -->
+                </div>
+                <!-- col-lg-6 end here -->
+              </div>
+            <!-- End .row -->
+      </div>
+      <!-- End .content-inner -->
     </div>
-    <!-- End .content-inner -->
-  </div>
   <!-- End .content-wrapper -->
   <div class="clearfix"></div>
 </div>
