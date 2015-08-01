@@ -33,7 +33,7 @@ def calcular(request, *args, **kwargs):
 
             if dic["rows"][0]:
                 status = "danger"
-                zone = "A sufrido una inundacion "
+                zone = "Ha sufrido una inundacion "
             else:
                 zone = "No a sufrido una inundacion "
                 status = "success"
